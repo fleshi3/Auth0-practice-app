@@ -12,13 +12,38 @@
         position: fixed;
         top: 0;
         left: 0;
+        height: 4rem;
+        line-height: 2rem;
         background: #b16286;
         color: white;
         padding: 1rem;
         width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        box-sizing: border-box;
         a {
                 color: white;
                 font-size: 20px;
+        }
+        button {
+                float: right;
+                background: transparent;
+                color: white;
+                border: white 2px solid;
+                box-shadow: 0 0 2px grey;
+                border-radius: 5px;
+                padding: 0.5rem;
+        }
+        .authButton {
+                text-align: right;
+                position: absolute;
+                right: 1rem;
+                .authUser {
+                        padding: 1rem;
+                        color: white;
+                        font-weight: 600;
+                        text-shadow: 0 0 1px pink;
+                }
         }
 }
 
@@ -33,7 +58,7 @@
 }
 
 .questionCard {
-        margin: 1rem;
+        margin: 3rem;
 }
 
 .cardContainer{
