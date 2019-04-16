@@ -1,0 +1,100 @@
+* {
+        text-decoration: none;
+        font-family: 'arial', sans-serif;
+        margin: 0;
+        padding: 0;
+}
+
+.App {
+}
+
+.navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #b16286;
+        color: white;
+        padding: 1rem;
+        width: 100%;
+        a {
+                color: white;
+                font-size: 20px;
+        }
+}
+
+.placeholderText {
+        margin-top: 100px;
+        height: 100%;
+}
+
+.row {
+        display: flex;
+        flex-flow: row nowrap;
+}
+
+.questionCard {
+        margin: 1rem;
+}
+
+.cardContainer{
+        display: flex;
+        flex-flow: column nowrap;
+        border-radius: 5px;
+        box-shadow: 0 0 5px grey;
+        .cardHeader {
+        background: #b16286;
+        color: white;
+        padding: 1rem 2rem;
+        margin: 0;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        }
+        .cardBody {
+                .cardTitle, .cardText {
+                        background: #d3869b;
+                        padding: 0 2rem;
+                        color: white;
+                }
+                .cardTitle {
+                        font-size: 24px;
+                        padding-top: 1rem;
+                }
+                .cardText {
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        padding: 1rem 2rem;
+                }
+        }
+}
+
+.questionContainer {
+       background: rgba(#b16286, 0.3);
+       height: 100%;
+       padding: 2rem;
+       margin: 3rem;
+       border-radius: 5px;
+       box-shadow: 0 0 5px grey;
+       .answerTitle {
+               font-size: 60px;
+               color: white;
+               text-shadow: 0 2px 0 #b16286;
+       }
+       .answerDescription {
+               font-size: 22px;
+               color: #b16286;
+               padding: 1rem 0;
+               font-style: italic;
+       }
+       .separator {
+               color: #b16286;
+       }
+       .answerSubHeading {
+               font-size: 18px;
+               font-weight: 600;
+               padding: 1rem 0;
+               color: #b16286;
+       }
+       .answerLead {
+               color: #b16286;
+       }
+}
