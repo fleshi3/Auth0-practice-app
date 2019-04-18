@@ -74,7 +74,7 @@ const checkJwt = jwt({
   }),
   // Validate the audience and the issuer
   audience: 'Mz1tnxcLPAulNoWn9SiiWfC5RRfZsWMg',
-  issuer: 'dev-c5fajbjh.au.auth0.com',
+  issuer: 'https://dev-c5fajbjh.au.auth0.com/',
   algorithims: ['RS256'],
 });
 

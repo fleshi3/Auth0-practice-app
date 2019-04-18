@@ -43,6 +43,17 @@ class Questions extends Component {
         <div className="row">
           {questions === null && <p>Loading questions...</p>}
           {questions && questions.map(this.questionCard)}
+      <div class="questionCard" key="NEW_QUESTION">
+              <Link to="/new-question">
+          <div className="cardContainer">
+            <div className="cardHeader"></div>
+            <div className="cardBody newQuestion">
+              <h4 className="cardTitle">Have a question?</h4>
+              <p className="cardText">Click here to sign in and submit a new question!</p>
+            </div>
+          </div>
+        </Link>
+      </div>
         </div>
       </div>
     );
