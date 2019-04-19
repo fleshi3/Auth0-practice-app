@@ -47,29 +47,27 @@ class NewQuestion extends Component {
     return (
       <div class="newQuestionContainer">
         <div className="formGroup">
-          <label htmlFor="questionTitle">Title:</label>
           <input
             type="text"
             disabled={this.state.disabled}
             onBlur={e => this.updateTitle(e.target.value)}
             className="formTitle"
-            placeholder="Give your question a title"
+            placeholder="Title"
             id="questionTitle"
           />
-          <label htmlFor="questionDesc">Description:</label>
           <input
             type="text"
             disabled={this.state.disabled}
             onBlur={e => this.updateDescription(e.target.value)}
             className="formDesc"
-            placeholder="Give more context to your question"
+            placeholder="Description"
             id="questionDesc"
           />
           <button
             disabled={this.state.disabled}
             className="formButton"
             onClick={() => this.submit()}>
-            Submit
+            SUBMIT
           </button>
         </div>
       </div>

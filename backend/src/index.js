@@ -18,7 +18,11 @@ const questions = [
     title: 'Pasta recipe',
     description: 'Does anyone have a good pasta recipe?',
     answers: [
-      "Try this spaghetti cabonara recipe I've been using: https://recipe.com/spaghetti-cabonara",
+      {
+        answer:
+          "Try this spaghetti cabonara recipe I've been using: https://recipe.com/spaghetti-cabonara",
+        author: 'hardcode@data.com',
+      },
     ],
   },
   {
@@ -26,9 +30,19 @@ const questions = [
     title: 'Lost Pet',
     description: 'Has anyone seen my lost corgie?',
     answers: [
-      'Does it have a collar?',
-      "I think I've seen one wandering around lately.",
-      'We found a corgie this afternoon. Contact me at j.doe@gmail.com so we can sort this out.',
+      {
+        answer: 'Does it have a collar/chip?',
+        author: 'lovesdogs@gmail.com',
+      },
+      {
+        answer: "I think I've seen a stray dog wandering around lately",
+        author: 'petrescue@yahoo.com',
+      },
+      {
+        answer:
+          'We found a corgie this afternoon. Contact me so we can sort this out',
+        author: 'j.doe@gmail.com',
+      },
     ],
   },
 ];
