@@ -22,7 +22,7 @@ class Questions extends Component {
   questionCard = questions => {
     const {id, answers, title, description} = questions;
     return (
-      <div class="questionCard" key={id}>
+      <div className="questionCard" key={id}>
         <Link to={`/question/${id}`}>
           <div className="cardContainer">
             <div className="cardHeader">Answers: {answers.length}</div>
@@ -39,11 +39,11 @@ class Questions extends Component {
   render() {
     const {questions} = this.state;
     return (
-      <div class="questionsContainer">
+      <div className="questionsContainer">
         <div className="row">
           {questions === null && <p>Loading questions...</p>}
           {questions && questions.map(this.questionCard)}
-      <div class="questionCard" key="NEW_QUESTION">
+      <div className="questionCard" key="NEW_QUESTION">
               <Link to="/new-question">
           <div className="cardContainer">
             <div className="cardHeader"></div>

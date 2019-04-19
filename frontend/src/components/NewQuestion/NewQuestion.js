@@ -45,7 +45,7 @@ class NewQuestion extends Component {
 
   render() {
     return (
-      <div class="newQuestionContainer">
+      <div className="newQuestionContainer">
         <div className="formGroup">
           <input
             type="text"
