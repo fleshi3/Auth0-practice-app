@@ -45,7 +45,7 @@ class Question extends Component {
     const {question} = this.state;
     if (question === null) return <p>Loading...</p>;
     return (
-      <div class="questionContainer">
+      <div className="questionContainer">
         <div className="answerContainer">
           <span className="answerTitle">{question.title}</span>
           <p className="answerDescription">
@@ -60,7 +60,7 @@ class Question extends Component {
           />
           <p className="answerSubHeading">Answers:</p>
           {question.answers.map((answer, idx) => (
-            <p class="answerLead" key={idx}>
+            <p className="answerLead" key={idx}>
               "{answer.answer}" <b>-{answer.author}</b>
             </p>
           ))}
